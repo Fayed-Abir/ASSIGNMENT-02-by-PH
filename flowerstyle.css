@@ -1,12 +1,14 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body{
   margin-top: 53.5px;
   margin-left: 150px;
   margin-right: 150px;
+  overflow-x: hidden;
 
 }
 
@@ -27,6 +29,19 @@ body{
 .display-flex {
   display: flex;
 }  
+
+/* Font Dept. */
+.medium-font{
+  font-size: 3rem;
+}
+
+.small-font{
+  font-size: 1.1rem;
+}
+
+.inter{
+  font-family: 'Inter', sans-serif
+}
 
 
 /* Navigation Bar Styling */
@@ -78,6 +93,39 @@ span{
   
 }
 
+/* Plant Dept. */
+.Heading-para{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card{
+  text-align: center;
+  /* max-width: 205px; */
+  
+}
+
+.btn-cart{
+  width: 270px;
+  height: 35px;
+  background-color: rgba(233, 90, 8, 1);
+  color: white;
+  font-size: .7rem;
+  border: 0;
+}
+#lily,#price{
+  margin-bottom: 6px;
+  font-size: 1rem;
+}
+.plant-cards{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr)
+  gap:20px
+  max-width: 1140px;
+}
 
 /* Responsive Department */
 @media screen and (max-width:576px) {
@@ -102,7 +150,7 @@ span{
   .banner{
     display: flex;
     flex-direction: column-reverse;
-    align-items: left
+    text-align: left
     ;
   }
   
