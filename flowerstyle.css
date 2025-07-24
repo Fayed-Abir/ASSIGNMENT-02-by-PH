@@ -65,16 +65,27 @@ body{
 /* Banner Department */
 span{
   font-size: 3.5rem;
+  
 }
-.ban-para{
-  font-size: 1.375rem;
+.ban-para-1{
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  font-family: 'inter', sans-serif;
 }
+.ban-para-2{
+  font-size: 1.1rem;
+  font-family: 'inter', sans-serif;
+  
+}
+
 
 /* Responsive Department */
 @media screen and (max-width:576px) {
+  /* Navbar Dept. */
   .vanish-item{
     display: none;
     justify-content:space-between;
+    align-items: center;
   }
   .nav{
     margin-top: 67px;
@@ -87,8 +98,22 @@ span{
     margin-right: 16px;
   }
 
+  /* Banner Dept. */
+  .banner{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: left
+    ;
+  }
   
-}
+  .ban-pic{
+    align-items: right
+  }
+
+  }
+
+  
+
 
 
 
