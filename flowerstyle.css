@@ -1,0 +1,8 @@
+.display-flex {
+  display: flex;
+}   
+
+/* Navigation Bar */
+.nav{
+    justify-content: space-between;
+}
