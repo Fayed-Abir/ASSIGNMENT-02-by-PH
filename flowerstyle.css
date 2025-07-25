@@ -122,41 +122,75 @@ span{
 .plant-cards{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr)
-  gap:20px
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
   max-width: 1140px;
 }
 
 /* Responsive Department */
 @media screen and (max-width:576px) {
+  
+ body{
+ margin-left: 10px;
+ margin-right: 10px; 
+ }
+
   /* Navbar Dept. */
   .vanish-item{
     display: none;
     justify-content:space-between;
     align-items: center;
   }
+  
   .nav{
+    max-width: 361px;
+    max-height: 38px;
     margin-top: 67px;
-    margin-left: 16px;
-    margin-right: 16px;
+    margin-left: 12px;
+    margin-right: 12px;
     margin-bottom: 28px;
   }
-  body{
-     margin-left: 16px;
-    margin-right: 16px;
+
+  .nav{
+     justify-content:space-between;
   }
+  
 
   /* Banner Dept. */
   .banner{
     display: flex;
     flex-direction: column-reverse;
-    text-align: left
-    ;
+    text-align: left;
   }
   
   .ban-pic{
-    align-items: right
+    align-items: right;
+    max-width: 393px;
+    max-height: 245px;
   }
+  
+  .ban-pic img{
+    width: 100%;
+  }
+
+
+  /* Plant Dept. */
+  .card{
+    max-width: 171px;
+    /* max-height: 296px; */
+    justify-content: center;
+    align-items: center;
+  }
+  .card img{
+    width: 100%;
+  }
+
+  .btn-cart{
+     max-width: 171px;
+     max-height: 50px;
+  }
+  
+
 
   }
 
