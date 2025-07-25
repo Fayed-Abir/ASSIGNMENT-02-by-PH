@@ -194,6 +194,336 @@ span{
     }
 
 
+    /* ADVERTISEMENT DEPT. */
+
+#advertisement {
+  margin-top: 133px;
+}
+
+#latest-deals {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.latest-deals-heading {
+  font-size: 3.125rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.latest-deals-para {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#latest-deals-img-sec {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.latest-deals-img-sec-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.latest-deals-img-sec-2 {
+  flex: 2;
+}
+
+.img-bloom,.img-ana {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.img-Zabo {
+  width: 100%;
+  height: 424px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.img-bloom {
+  background-image: url('assets/deal-bloom.png');
+}
+
+.img-ana {
+  background-image: url('assets/deal-ana.png');
+}
+
+.img-Zabo {
+  background-image: url('assets/deal-zabo.png');
+}
+
+.img-bloom h4,.img-ana h4,.img-Zabo h4 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.deal-link-1,
+.deal-link-2 {
+  color: white;
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
+/* Newsletter Section */
+#newsletter {
+  background-color: #f8d5be;
+  padding: 80px 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.newsletter-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter-bg {
+  background-color: white;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 700px;
+}
+
+.newsletter-bg h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.newsletter-form input[type="email"] {
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.newsletter-form button {
+  background-color: rgba(233, 90, 8, 1);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Footer Styles */
+#footer {
+  background-color: #333;
+  color: white;
+  padding: 60px 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.footer-left {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.footer-description {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+  max-width: 300px;
+}
+
+.footer-right {
+  display: flex;
+  flex: 2;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-col {
+  min-width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer-col h4 {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  color: white;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: rgba(233, 90, 8, 1);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .newsletter-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-right {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.orange {
+  color: rgba(233, 90, 8, 1);
+}
+
+/* Newsletter Section */
+.newsletter-section {
+  background: url('assets/news-letter-bg.png') no-repeat center center/cover;
+  padding: 5rem 1rem;
+  color: white;
+  text-align: center;
+}
+
+.newsletter-overlay {
+  max-width: 500px;
+  margin: auto;
+}
+
+.newsletter-overlay h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.newsletter-form {
+  display: flex;
+  background: white;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.newsletter-form input {
+  flex: 1;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  outline: none;
+}
+
+.newsletter-form button {
+  background-color: #e95a08;
+  color: white;
+  padding: 0 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #f9f9fb;
+  padding: 3rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+}
+
+.footer-column.full {
+  flex: 1 1 100%;
+  max-width: 300px;
+}
+
+.footer-logo {
+  width: 120px;
+  margin-bottom: 1rem;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.footer-socials img {
+  width: 24px;
+  height: 24px;
+}
 
 
 
@@ -322,7 +652,37 @@ span{
       align-items: left;
       text-align: left;
     }
+
+    /* ADVERTISEMENT DEPT */
+   #latest-deals-img-sec{
+    display: flex;
+    flex-direction: column;
+   } 
+
+   .newsletter-form {
+    flex-direction: column;
   }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    width: 100%;
+    padding: 0.75rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+}
+   
+
+  
+
+
 
   
 
