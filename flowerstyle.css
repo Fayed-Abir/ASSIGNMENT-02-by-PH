@@ -43,6 +43,9 @@ body{
   font-family: 'Inter', sans-serif
 }
 
+.noto{
+  font-family: 'Noto Serif', serif;
+}
 
 /* Navigation Bar Styling */
 .nav{
@@ -85,15 +88,16 @@ span{
 .ban-para-1{
   font-size: 1.1rem;
   margin-bottom: 15px;
-  font-family: 'inter', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 .ban-para-2{
   font-size: 1.1rem;
-  font-family: 'inter', sans-serif;
+  font-family: 'Inter', sans-serif;
   
 }
 
-/* Plant Dept. */
+
+ /* Plant Department. */
 .Heading-para{
   align-items: center;
   justify-content: center;
@@ -126,6 +130,72 @@ span{
   gap: 20px;
   max-width: 1140px;
 }
+#plant-section{
+  margin-bottom: 41px;
+}
+
+
+/*Plant-Lovers Department  */
+
+    #plant-love-img-1 img{
+      max-width: 286px;
+      max-height: 386px;
+      margin-left: 335px;
+      margin-bottom: -150px;
+      /* border: 2px solid teal; */
+    }
+
+    #plant-love-img-2 img{
+      max-width: 540px;
+      max-height: 597px;
+    }
+    
+    
+    .plant-love-para{
+      text-align: left;
+      z-index: 1;
+    }
+    
+    #plant-lover-heading{
+      font-weight: 700;
+      font-size: 3.125rem;
+    }
+
+    #plant-lover-list{
+      max-width: 540px;
+      max-height: 521px;
+    }
+
+    .plant-lover-item{
+      font-size: 1.375rem;
+      color: rgba(0, 0, 0, 0.5);
+      font-weight: 400;
+      text-align: left;
+    }
+
+    #plant-lover-sec-1{
+      position: relative;
+      z-index: 4;
+    }
+
+    #plant-lover-sec-2{
+      display: flex;
+      gap: 60px;
+      position: relative;
+    }
+
+    #plant-lover-heading{
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .plant-lover-item{
+      margin-bottom: 20px;
+    }
+
+
+
+
 
 /* Responsive Department */
 @media screen and (max-width:576px) {
@@ -161,6 +231,7 @@ span{
     display: flex;
     flex-direction: column-reverse;
     text-align: left;
+    margin-bottom: 20px;
   }
   
   .ban-pic{
@@ -173,11 +244,21 @@ span{
     width: 100%;
   }
 
+  span{
+    font-size: 1.5rem;
+  }
+  .plant-title span{
+    font-size: 1.5rem;
+  }
+.plant-para{
+  font-size: .88rem;
+}
+
+
 
   /* Plant Dept. */
   .card{
     max-width: 171px;
-    /* max-height: 296px; */
     justify-content: center;
     align-items: center;
   }
@@ -190,8 +271,57 @@ span{
      max-height: 50px;
   }
   
+    
 
+   /* Plant Lover Dept. */
+   
+   #plant-lover-sec{
+    display: flex;
+    flex-direction: column;
+   }
+    #plant-lover-sec-1{
+      display: none;
+    }
+    
+    #plant-lover-sec-2 #plant-lover-img-2, .plant-lover-para, #plant-lover-list, #plant-lover-heading{
+      max-width: 361px;
+      
+    }
 
+    #plant-lover-img-2 img{
+      width:100%
+    }
+     
+    .plant-lover-para{
+      margin-top: 20px;
+      margin-left: 10px;
+    }
+
+    #plant-lover-sec-2, .plant-lover-para{
+      display: inline-block;
+      justify-content: left;
+      text-align: left;
+    }
+
+    #plant-lover-heading{
+      font-size: 1.5rem;
+      text-align: left;
+    
+    }
+
+    .plant-lover-item{
+      font-size: .88rem;
+      text-align: left;
+    }
+
+    #br{
+      display: none;
+    }
+    #plant-lover-list li{
+      justify-items: left;
+      align-items: left;
+      text-align: left;
+    }
   }
 
   
