@@ -1,16 +1,19 @@
-*{
+/* *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 body{
-  margin-top: 53.5px;
+  /* margin-top: 53.5px;
   margin-left: 150px;
-  margin-right: 150px;
+  margin-right: 150px; */
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
 
 }
+
 
 /* Color collection */
     .Black-1{
@@ -48,6 +51,15 @@ body{
 }
 
 /* Navigation Bar Styling */
+
+.nav-container{
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .nav{
     justify-content:space-between;
     justify-items: center;
@@ -82,6 +94,8 @@ body{
 .cart-logo img{
   margin-right: 5px;
 }
+
+
 /* Banner Department */
 span{
   font-size: 3.5rem;
@@ -97,8 +111,25 @@ span{
   font-family: 'Inter', sans-serif;
 }
 
-.banner{
-  margin-bottom: 120px;
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  gap: 30px;
+  box-sizing: border-box;
+  /* min-width: 768px; */
+}
+.ban-pic img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+.ban-heading {
+  flex: 1;
 }
 
 
@@ -109,35 +140,49 @@ span{
   justify-content: center;
   text-align: center;
   margin-bottom: 20px;
+  /* margin-left: 10.139%;
+  margin-right: 10.139%; */
+  margin: 0 auto;
+  padding: 0 16px;
+  max-width: 1140px;
+  box-sizing: border-box;
+  
 }
 
 .card{
   text-align: center;
-  /* max-width: 205px; */
-  
+  /* max-width: 205px; */ 
 }
 
 .btn-cart{
-  width: 270px;
+  /* width: 270px; */
   height: 35px;
   background-color: rgba(233, 90, 8, 1);
   color: white;
   font-size: .7rem;
   border: 0;
+   width: 100%;
+  max-width: 270px;
 }
 #lily,#price{
   margin-bottom: 6px;
   font-size: 1rem;
 }
-.plant-cards{
+
+  .plant-cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr); 
   gap: 20px;
   max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 16px;
+  box-sizing: border-box;
 }
+
 #plant-section{
   margin-bottom: 41px;
+  margin-left: 10.139%;
+  margin-right: 10.139%;
 }
 
 .plant-title{
@@ -157,12 +202,12 @@ span{
       /* border: 2px solid teal; */
     }
 
-    #plant-love-img-2 img{
+    /* #plant-lover-img-2 img{
       max-width: 540px;
       max-height: 597px;
-    }
+    } */
     
-    .plant-love-para{
+    .plant-lover-para{
       text-align: left;
       z-index: 1;
     }
@@ -172,10 +217,10 @@ span{
       font-size: 3.125rem;
     }
 
-    #plant-lover-list{
+    /* #plant-lover-list{
       max-width: 540px;
       max-height: 521px;
-    }
+    } */
 
     .plant-lover-item{
       font-size: 1.375rem;
@@ -204,10 +249,20 @@ span{
       margin-bottom: 20px;
     }
 
+    #plant-lover-sec{
+      max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 16px;
+  width: 100%;
+  box-sizing: border-box;
+    }
+
 
     /* ADVERTISEMENT DEPT. */
 #advertisement {
   margin-top: 133px;
+  margin-left: 10.139%;
+  margin-right: 10.139%;
 }
 
 #latest-deals {
@@ -293,11 +348,18 @@ span{
   margin-bottom: 8px;
 }
 
-.deal-link-1,
-.deal-link-2 {
+.deal-link-1,.deal-link-2 {
   color: white;
   font-size: 1rem;
   text-decoration: underline;
+}
+
+.section-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 16px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Newsletter Section */
@@ -306,8 +368,6 @@ span{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 1440px;
-  height: 533px;
   width: 100%;
   height: 100%;
   padding: 5rem 1rem;
@@ -315,6 +375,11 @@ span{
   text-align: center;
   
 }
+/* #full-width{
+  width: 1440px;
+  height: 530px;
+  align-items: center;
+} */
 
 .newsletter-overlay {
   max-width: 500px;
@@ -387,21 +452,27 @@ span{
 
 /* Footer Styles */
 #footer {
+  width: 100%;
+  max-width: 1440px;
+  height: 384px;
   background-color: #333;
   color: white;
-  padding: 60px 20px;
-  font-family: 'Inter', sans-serif;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
 }
 
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-  flex-wrap: wrap;
+.footer-inner {
   max-width: 1140px;
   margin: 0 auto;
+  width: 100%;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  box-sizing: border-box;
 }
-
 
 .footer-logo {
   font-size: 2rem;
@@ -465,10 +536,10 @@ span{
 /* Responsive Department */
 @media screen and (max-width:576px) {
   
- body{
+ /* body{
  margin-left: 10px;
  margin-right: 10px; 
- }
+ } */
 
   /* Navbar Dept. */
   .vanish-item{
@@ -536,8 +607,13 @@ span{
 
 
   /* Plant Dept. */
+  
+  .plant-cards {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 12px;
+  }
   .card{
-    max-width: 171px;
+    /* max-width: 171px; */
     justify-content: center;
     align-items: center;
   }
@@ -560,6 +636,11 @@ span{
   font-size: .88rem;
   margin-top: 10px;
 }
+#plant-section {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 12px; 
+  }
 
 
    /* Plant Lover Dept. */
@@ -652,7 +733,6 @@ span{
 }
    
 
-/* Responsive */
+
 /* @media screen and (max-width: 768px) { */
   
-/* Footer Section */

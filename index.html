@@ -18,6 +18,7 @@
 <body>
   <header>
     <!-- Navigation Section -->
+     <div class="nav-container">
      <nav class="nav display-flex">
        <div id="nav-logo"><img src="assets/logo.png" alt=""></div>
        <div class="nav-link-div">
@@ -30,6 +31,7 @@
        </ul>
        </div>
      </nav>
+     </div>
 
      <!-- Banner Section -->
        <div class="banner display-flex">
@@ -57,12 +59,12 @@
     </div>
     
     <div class="plant-cards inter">
+      
       <div class="card">
-        <div class="card-img"><img src="assets/sample-flower-image.png" alt="Plant Flower"></div>
-          <div class="card-hb">
-           <h6 id="lily">Lily Blossom</h6>
-           <h6 id="price">20 USD</h6>
-           <button class="btn-cart">ADD TO CART</button></div>
+        <img src="assets/sample-flower-image.png" alt="Plant Flower">
+          <h6 id="lily">Lily Blossom</h6>
+          <h6 id="price">20 USD</h6>
+          <button class="btn-cart">ADD TO CART</button>
       </div>
       <div class="card">
         <img src="assets/sample-flower-image.png" alt="Plant Flower">
@@ -143,6 +145,7 @@
 <!-- ADVERTISEMENT SECTION -->
 <section>
   <div id="advertisement">
+    <div class="section-container">
   <div id="latest-deals">
     <div id="latest-deals-typo-sec">
       <h3 class="latest-deals-heading noto"><span id="latest" class="orange">Latest</span>  <span id="deals"">Deals</span></h3>
@@ -172,11 +175,12 @@
 
   </div>
 </div>
+</div>
 </section>
 
 
 <!-- Newsletter Section -->
-<section class="newsletter-section">
+<section class="newsletter-section" id="full-width">
   <div class="newsletter-overlay">
     <h2>Join the colorful Bunch</h2>
     <form class="newsletter-form">
@@ -188,6 +192,7 @@
 
 <!-- Footer Section -->
 <footer class="footer">
+  <div class="footer-inner">
   <div class="footer-column full">
     <img src="assets/logo.png" alt="Logo" class="footer-logo">
     <p class="inter light-black">Indulge your senses with the beauty and fragrance of our fresh flower shop.</p>
@@ -216,8 +221,8 @@
     <img src="assets/icon-facebook.png" alt="Facebook">
     <img src="assets/icon-youtube.png" alt="YouTube">
   </div>
+</div>
 </footer>
-
 
 </body>
 </html>
